@@ -36,7 +36,7 @@ const shop = new Sprite({
 
 export const player = new Fighter({
   position: {
-    x: 0,
+    x: 250,
     y: 0,
   },
   velocity: {
@@ -96,7 +96,7 @@ export const player = new Fighter({
 
 export const enemy = new Fighter({
   position: {
-    x: 400,
+    x: 724,
     y: 100,
   },
   velocity: {
@@ -255,7 +255,7 @@ function animate() {
   ) {
     player.takeHit();
     enemy.isAttacking = false;
-    
+
     gsap.to('#playerHealth', {
       width: player.health + "%"
     })
