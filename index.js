@@ -331,8 +331,5 @@ window.addEventListener("keyup", (event) => {
     case "ArrowLeft":
       keys.ArrowLeft.pressed = false;
       break;
-    case "ArrowDown":
-      enemy.isAttacking = false;
-      break;
   }
 });
